@@ -7,7 +7,7 @@ class Game:
         self.player2 = player2
 
     def player2_as_computer():
-        return Player("computer", random.choice(["rock", "paper", "scissors"]))
+        return Player("Player2", random.choice(["rock", "paper", "scissors"]))
 
     def determine_winner(player1, player2):
         if player1.choice == player2.choice:

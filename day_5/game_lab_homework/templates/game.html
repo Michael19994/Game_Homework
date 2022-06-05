@@ -6,7 +6,22 @@
     <p>Time to face Player 2!</p>
 
 <form action="/game" method="POST">
-    <label for="name"></label>
+    <label for="name">
+        <span>Player1</span>
+        <input id="name" type="text" name="name" placeholder="Player1">
+    </label>
+
+    <label for="choice">
+        <span>Rock/Paper/Scissors</span>
+        <select name="choice" id="choice">
+            <option value="rock">Rock:</option>
+            <option value="paper">Paper:</option>
+            <option value="scissors">Scissors:</option>
+        </select>
+    </label>
+
+    <input type="submit" value="Start">
+
 </form>
 
 </section>

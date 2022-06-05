@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>{{ title }} - Game</title>
-
-</head>
-<body>
-
-    <header>
-
-        <div class="badge">
-            <img src="game_of_chance.jpg" alt="badge">
-            <a href="Game of Chance"></a>
-        </div>
-        
-        <h2>{{ title }}</h2>
-
-        <nav>
-    <ul>
-        <li> 
-            <a href="/">Homepage</a>
-            <a href="/game">Start Game</a>
-        </li>
-    </ul>
-        </nav>
-
-</header>
     
-<main>
-    <h1>Rock, Paper, or Scissors?</h1>
-</main>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>{{ title }} - Game</title>
+        
+    </head>
+    <body>
+        
+        <header>
+            
+            <div class="badge">
+                <img src="{{ url_for('static', filename='game_of_chance.jpg') }}" alt="badge">
+                <a href="Game of Chance"></a>
+            </div>
+            
+            <h1>{{ title }}</h1>
+            
+            <nav>
+                <ul>
+                    <li> 
+                        <a href="/">Homepage</a>
+                        <a href="/game">Start Game</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
+        
+        <main>
+            <h2>Rock, Paper, or Scissors?</h2>
+            {% block content %}{% endblock %}
+        </main>
 
 <footer>
 
@@ -50,6 +51,5 @@
 </footer>
 
 
-    {% block content %}{% endblock %}
 </body>
 </html>

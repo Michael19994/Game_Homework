@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2> {{ wins_game.name }} </h2>
 
+<section>
+
+<p>{{ player1.name }} chose {{player1.choice}}</p>
+<p>{{ player2.name }} chose {{player2.choice}}</p>
+<p class="wins_game"> {{ wins_game.name }} wins with {{wins_game.choice}} </p>
+
+</section>
 
 
 {% endblock content %}

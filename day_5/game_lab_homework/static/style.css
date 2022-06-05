@@ -1,5 +1,46 @@
-body header div img {
-  font-size: large;
-  align-items: center;
-  text-align: center;
+body {
+  background-color: darkgreen;
+}
+
+header {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+main {
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: white;
+margin: 2rem 4rem;
+background-color: black;
+border-top: 1px dotted  white;
+border-bottom: 1px dotted  white;
+padding: 2rem;
+} 
+
+footer {
+  font-family: monospace;
+}
+
+.wins_game {
+  font-size: 2rem;
+
+}
+
+img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+main>ul {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+main>ul>li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
 }
