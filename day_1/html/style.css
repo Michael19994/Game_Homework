@@ -1,0 +1,56 @@
+.white-text {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+body > header {
+    padding: 1rem;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > ul {
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+body > main {
+    margin: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#author {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    border: 2px dashed #eee;
+}
+#author>img {
+    border-radius: 100%;
+}
+
+body > footer {
+    padding: 1rem;
+    background-color: dodgerblue;
+}
+
+#footer-container {
+    display: flex;
+    gap: 2rem;
+}
+
+/*
+CSS Secret Tips 
+display: flex          < - activates flexbox on a container element
+flex-direction: column < - creates a column instead of a row (the default)
+jusifty-content:       < - controls how elements are spaced
+align-items:           < - controls aligment on cross axis
+gap:                   < - creates a gap between elements
+/*

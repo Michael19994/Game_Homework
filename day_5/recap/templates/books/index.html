@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Books</h1>
+{% for books in books %}
+<ul>
+    <li>
+       Title: {{book.title}}
+    </li>
+    <li>
+       Author: {{book.author}}
+    </li>
+    <li>
+       Genre: {{book.genre}}
+    </li>
+    <form action="/books/{{loop.index0}}/delete">
+        <input type="Sumbit" value="Delete">
+    </form>
+</ul>
+{% endfor %}
+{% endblock %}

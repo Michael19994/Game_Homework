@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{{ title }} - Game</title>
+
+</head>
+<body>
+
+    <header>
+
+        <div class="badge">
+            <img src="game_of_chance.jpg" alt="badge">
+            <a href="Game of Chance"></a>
+        </div>
+        
+        <h2>{{ title }}</h2>
+
+        <nav>
+    <ul>
+        <li> 
+            <a href="/">Homepage</a>
+            <a href="/game">Start Game</a>
+        </li>
+    </ul>
+        </nav>
+
+</header>
+    
+<main>
+    <h1>Rock, Paper, or Scissors?</h1>
+</main>
+
+<footer>
+
+   
+<p>
+    Game of Chance &copy; 1994
+</p>
+<p>
+    Please follow all rules of Game of Chance, failure to do so will result in a permanent ban.
+</p>
+<p>
+    Rules are explained on the Homepage
+</p>
+</footer>
+
+
+    {% block content %}{% endblock %}
+</body>
+</html>
